@@ -15,7 +15,7 @@ export default function NavBar() {
 
             {/* Centered Wallet Title */}
             <div className="text-white text-2xl font-bold 
-            flex-shrink-0 ml-20 flex">
+            flex-shrink-0 ml-15 mr-15 flex">
                 <FaWallet size={26} className="mr-3"></FaWallet>
                 Wallet
             </div>
@@ -37,24 +37,8 @@ export default function NavBar() {
                     </svg>
                 </button>
 
-                {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-4">
-                    <button className="text-white hover:bg-gray-700 px-4 py-2 rounded">
-                        Button
-                    </button>
-                </div>
             </div>
 
-            {/* Mobile Menu */}
-            {isMenuOpen && (
-                <div className="absolute top-0 right-0 mt-12 bg-gray-800 text-white shadow-lg rounded-md w-48 md:hidden">
-                    <div className="p-4">
-                        <button className="w-full text-left py-2 px-4 hover:bg-gray-700 rounded">
-                            Button
-                        </button>
-                    </div>
-                </div>
-            )}
         </div>
     );
 }
